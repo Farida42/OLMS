@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LMS</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="IMG/favicon_icon.png" type="image/png"
+            sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+		<!-- <link rel="stylesheet" type="text/css" href="Libraryms-PHP/css/header_style.css" /> -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- For Using Styled Icons in Page -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i"
+            rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/themify-icons.css"/>
+        <link rel="stylesheet" href="css/magnific-popup.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/owl.carousel.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/header.css">
+        <link rel="stylesheet" type="text/css" href="CSS/nav.css">
+		<link rel="stylesheet" type="text/css" href="CSS/privpolicy.css">
+        <!--====== Javascripts & Jquery ======-->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angularmodules.min.js"></script>
+
+        <script>
+            function scrollTo(id) {
+                $('html,body').animate({ scrollTop: ($("#" + id).offset().top - 0) }, 2000);
+            }
+            $(function () {
+                $('.courseTab,.examTabRed,.syllabusTabPurple,.syllabusTabBlue').click(function () {
+                    $(this).closest('.tab-Box').find('.tab-pane[tablinked]').removeClass('active');
+                    $(this).closest('.tab-Box').find('.tab-pane[tablinked=' + $(this).attr('tablinked') + ']').addClass('active');
+                });
+            });
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-140414536-1');
+        </script>
+    </head>
+    <body ng-app="myApp" >
+        <header>
+			<!-- <a href="./">
+				<div id="cd-logo">
+					<img src="img/ic_logo2.svg" alt="Logo" width="45" height="45" />
+					<p>Library Management System</p>
+				</div>
+			</a> -->
+			<img src="logo.png" alt="Logo" />
+		</header>
+		<div class="navContainer">
+            <ul>
+                <!-- <li><a href="termscond.html">Terms and Condition</a></li>
+                <li><a href="PrivPolicy.html">Privacy Policy</a></li> -->
+                <li><a href="login & registration.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </div>
+		<div class="menu-section"></div>
+        <!-- Page Preloder -->
+		<div id="preloder">
+			<div class="loader"></div>
+		</div>
+		<!-- header section -->
+		<div ng-include="'include/header.html'"></div>
+		<!-- About section -->
+		<section class="about-section spad" style="padding-top: 30px;">
+			<div class="container">
+				<div class="section-title text-center">
+					<h1 style="font-size: 36px;">WHAT IS ONLINE LIBRARY MANAGEMENT SYSTEM </h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 about-text">
+						<p>Online Library Management System is an Automated Library System</a> that handles the various
+							functions of the library. It provides a complete solution to the library
+							management software. The online Library Management System is classified
+							into two parts Bar Code System and RFID System. </p>
+						<p>Library plays an important role in all schools and colleges, no
+							educational institution can exist without Library Administration
+							Software. It is an important part of every school and college and it
+							helps the librarian to keep records of available books as well as issued
+							books. Library Management System software helps in different ways by
+							providing students the facility to learn, gather resources, promote group
+							learning and improve knowledge and skills.</p>
+						<h3 style="font-size: 15px;">Features of Online Library Management System</h3>
+						<ul class="about-list">
+							<li><i class="fa fa-check-square-o"></i> Integration of all records of
+								students</li>
+							<li><i class="fa fa-check-square-o"></i> Manage the records
+								systematically</li>
+							<li><i class="fa fa-check-square-o"></i> It can track any information
+								online</li>
+							<li><i class="fa fa-check-square-o"></i> One can generate the reports</li>
+							<li><i class="fa fa-check-square-o"></i> Manage all information online</li>
+							<li><i class="fa fa-check-square-o"></i> Easy to maintain records</li>
+							<li><i class="fa fa-check-square-o"></i> It leads to fast book entry</li>
+						</ul>
+						<p>The demand for Library Automation Software in India is increasing day
+							by day with the advancement of the system. As we all are living in the
+							digital age, everyone prefers quick and accurate service. Almost all
+							schools and colleges prefer the Library Management System due to the
+							organized and systematic management of the database. College Library
+							Software helps the students to prepare their projects easily and in less
+							time. It also helps in preparing notes and assignments.</p>
+						<p>Library Management System helps the students in better learning by
+							providing quick access to the library system. With Advance Library
+							Software they can easily find books, catalogs, magazines of their
+							interest. The library is a great place to study and make notes which
+							ultimately help in scoring a good score.</p>
+					</div>
+					<div class="col-lg-6 pt-5 pt-lg-0">
+						<img src="img/online-library-management.jpg" alt="Barcode System">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About section end-->
+
+		<!-- About section -->
+		<section class="about-section spad" style="background-color: #f8f8f8;
+			border-top: solid 1px #ccc;">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>Advantages of Online Library Management System</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 about-text">
+						<p>Advantages of Online Library Management System are:</p>
+						<ul class="about-list">
+							<li><i class="fa fa-check-square-o"></i> It is user-friendly software</li>
+							<li><i class="fa fa-check-square-o"></i> It is cost-effective and easy to
+								install</li>
+							<li><i class="fa fa-check-square-o"></i> It helps in maintaining records</li>
+							<li><i class="fa fa-check-square-o"></i> One can track any information
+								through this system</li>
+							<li><i class="fa fa-check-square-o"></i> It increases the efficiency
+							</li>
+							<li><i class="fa fa-check-square-o"></i> It saves human effort and time</li>
+							<li><i class="fa fa-check-square-o"></i> It reduces the chances of error</li>
+							<li><i class="fa fa-check-square-o"></i> It acts as an anti-theft</li>
+						</ul>
+						<p>As discussed, the Online Library Management System is categorized into
+							two parts bar code system and RFID system. In a bar code system, books a
+							unique bar code number is assigned to every book and with the help of a
+							bar code reader, we can check the status of the book like when it is
+							issued and returned. While RFID based library management system is a
+							wireless-based system which helps in easy maintenance of records, which
+							reduces the burden of a librarian and lead to fast-tracking of record.</p>
+						<p>Library Management System stores every information electronically and
+							in an organized and systematic way which leads to effective results. It
+							enhances the overall performance of the students and develops the habit
+							of silent reading. The software is designed in such a way that it
+							modernize the library system and help the students to make the best use
+							of the Library Automation System.</p>
+
+					</div>
+					<div class="col-lg-6 pt-5 pt-lg-0">
+						<img src="img/library-management-system.jpg" alt=" ">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About section end-->
+
+		<!-- About section -->
+		<section class="about-section spad" style="background-color: #fff; border-top:
+			solid 1px #ccc;">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>Digital RFID Library Management Software</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 about-text">
+						<p>Library Management System is designed in such a way that it keeps the
+							functioning of the library smooth and in order. It is user-friendly
+							software. It helps in keeping track of the books, catalogues, magazines,
+							etc. This system increases the efficiency of the librarian and better
+							management of the library. It leads to an easy search of the desired book
+							from the library.</p>
+						<p>Some of the features of the Digital RFID
+								Library Management Software are:</p>
+						<ul class="about-list" style="margin-top: -18px;">
+							<li><i class="fa fa-check-square-o"></i> Easy way to enter book data</li>
+							<li><i class="fa fa-check-square-o"></i> Full catalogue, circulation, and
+								acquisition system for library stock management</li>
+							<li><i class="fa fa-check-square-o"></i> Web-based OPAC (Online Public
+								Access Catalogue) system</li>
+							<li><i class="fa fa-check-square-o"></i> Simple, clear search interface
+								for all users</li>
+							<li><i class="fa fa-check-square-o"></i> Multilingual and multi-user
+								support</li>
+							<li><i class="fa fa-check-square-o"></i> Export and import records</li>
+							<li><i class="fa fa-check-square-o"></i> A modern integrated library
+								management system</li>
+							<li><i class="fa fa-check-square-o"></i> Print own barcodes</li>
+						</ul>
+						<p>As we have already discussed the library management system is based on
+							two techniques Bar Code System and RFID System. The bar code system is
+							based on unique bar codes provided to each and every book; it contains
+							all the information about the product. RFID based library management
+							system is a wireless-based system which helps in keeping records in an
+							easy manner. It acts as an anti-theft system, which provides whole
+							security to the Library Management System, there is a facility of alarm
+							system which gets active on stealing of any book from the library.</p>
+					</div>
+					<div class="col-lg-6 pt-5 pt-lg-0">
+						<img src="img/lms-kiosk-screen.png" alt="">
+					</div>
+				</div>
+
+				<div ng-include="'include/also-read.html'"></div>
+			</div>
+		</section>
+
+		<!-- Footer section -->
+		<div ng-include="'include/footer.html'"></div>
+		<!-- Footer section end-->
+		<!--====== Javascripts & Jquery ======-->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/magnific-popup.min.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Drop Down-->
+		<script>
+		$(function () {			
+			$('body').delegate('.dropdown-toggle', 'click', function (event) {				
+				event.preventDefault();
+				event.stopPropagation();			
+				$(this).parent().children('ul').toggle("show");
+			});   
+		});
+	</script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="IMG/favicon_icon.png" type="image/png"
+            sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+		<!-- <link rel="stylesheet" type="text/css" href="Libraryms-PHP/css/header_style.css" /> -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- For Using Styled Icons in Page -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i"
+            rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/themify-icons.css"/>
+        <link rel="stylesheet" href="css/magnific-popup.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/owl.carousel.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/header.css">
+        <link rel="stylesheet" type="text/css" href="CSS/nav.css">
+		<link rel="stylesheet" type="text/css" href="CSS/privpolicy.css">
+        <script src="JS/mainStyle.js" defer></script>
+        <script src="JS/nav.js" defer></script>
+        <!--====== Javascripts & Jquery ======-->
+           <script src="js/angular.min.js"></script>
+           <script src="js/angularmodules.min.js"></script>
+   
+           <script>
+               function scrollTo(id) {
+                   $('html,body').animate({ scrollTop: ($("#" + id).offset().top - 0) }, 2000);
+               }
+               $(function () {
+                   $('.courseTab,.examTabRed,.syllabusTabPurple,.syllabusTabBlue').click(function () {
+                       $(this).closest('.tab-Box').find('.tab-pane[tablinked]').removeClass('active');
+                       $(this).closest('.tab-Box').find('.tab-pane[tablinked=' + $(this).attr('tablinked') + ']').addClass('active');
+                   });
+               });
+           </script>
+           <!-- Global site tag (gtag.js) - Google Analytics -->
+           <script>
+               window.dataLayer = window.dataLayer || [];
+               function gtag(){dataLayer.push(arguments);}
+               gtag('js', new Date());
+               gtag('config', 'UA-140414536-1');
+           </script>
+    </head>
+    <body ng-app="myApp" >
+        <header>
+            <img src="logo.png" alt="Logo" />
+        </header>
+		<div class="navContainer">
+			<ul>
+				<!-- <li><a href="termscond.html">Terms and Condition</a></li>
+				<li><a href="PrivPolicy.html">Privacy Policy</a></li> -->
+				<li><a href="login & registration.html">Login</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="home.html">Home</a></li>
+			</ul>
+		</div>
+        <div class="menu-section"></div>
+        <div class="imgVisualContainer">
+            <button id="previmg" onclick="PrevImg()"><i class="fas fa-chevron-circle-left"></i></i></button>
+            <div class="imgVisual">
+            </div>
+                <img id="PicDisp" src="IMG/MainPageResource/lib1.jfif" height="650px" width="900px">
+            <button id="nextimg" onclick="NextImg()"><i class="fas fa-chevron-circle-right"></i></button>
+        </div>
+        <div class="LogCntainer">
+    
+            <div id="themeL" class="quote">
+                <h1>Quote</h1>
+                <h2>"The library is inhabited by spirits <br> that come out of the pages at night"</h2>
+            </div>
+    
+            <div id="themeD" class="log">
+                <h1>Get Some Books</h1>
+                <div class="btnContainer">
+                    <a class="myButton" href="adminlogin.php">Login</a><br>
+                    <a class="myButton" href="signup.php">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script src="./nav.js"></script>
+</html>
